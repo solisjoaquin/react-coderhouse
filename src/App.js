@@ -1,5 +1,6 @@
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
+import ItemCount from './components/ItemCount/ItemCount';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <ItemListContainer
         greeting="Saludos" />
+      <ItemCount stock={10} initial={1} />
     </div>
   );
 }
