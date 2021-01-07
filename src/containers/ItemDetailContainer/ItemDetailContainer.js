@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ItemDetail from '../../components/ItemDetail.js/ItemDetail'
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
+import NoMatch from '../../components/NoMatch';
 
 let itemsList = [
     {
@@ -103,7 +104,12 @@ function ItemDetailContainer() {
 
     return (
         <div>
-            <ItemDetail item={item} id={id} />
+            { item ?
+                <ItemDetail item={item} />
+                :
+                <NoMatch />
+            }
+
         </div>
     )
 

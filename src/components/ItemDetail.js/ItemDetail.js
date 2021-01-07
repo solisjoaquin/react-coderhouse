@@ -1,6 +1,7 @@
 import React from 'react'
 
 function ItemDetail({ item }) {
+    console.log(item)
     return (
         <div>
             <section className="text-gray-600 overflow-hidden">
