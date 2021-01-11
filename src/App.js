@@ -1,9 +1,9 @@
 import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter as Router, Switch, Route, useLocation, Link } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar';
 import ItemCount from './components/ItemCount/ItemCount';
 import NoMatch from './components/NoMatch';
+import NavbarResponsive from './components/Navbar';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <NavbarResponsive />
         <Switch>
           <Route exact path="/">
             <ItemListContainer greeting="Saludos" />
