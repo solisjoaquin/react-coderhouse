@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 
-function ItemCount({ stock, initial }) {
+function ItemCount({ stock, initial, onAdd }) {
     const [counter, setCounter] = useState(initial)
 
     const sumarUnItem = () => {
@@ -17,12 +17,12 @@ function ItemCount({ stock, initial }) {
         }
     }
 
-    const addItem = () => {
+    const addItem = (e) => {
         console.log(`${counter} productos agregados`)
+        onAdd(counter)
     }
     return (
-        <div className="bg-gray-300 p-4 flex flex-col w-52">
-            Nombre de producto
+        <div className="bg-gray-100 p-4 flex flex-col w-52">
             <div className="bg-white flex justify-between">
                 <button className="px-7" onClick={restarUnItem}>-</button>
                 {counter}

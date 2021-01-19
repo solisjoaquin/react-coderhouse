@@ -18,7 +18,7 @@ let itemsList = [
         price: 3400,
         category: "notebook",
         description: "Intel Core i7 de seis núcleos a 2,6 GHz de novena generación Turbo Boost de hasta 4,5 GHz AMD Radeon Pro 5300M con 4 GB de memoria GDDR6 16 GB de memoria DDR4 a 2.666 MHz",
-        pictureUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'
+        pictureUrl: 'https://images.unsplash.com/photo-1515803171005-2d5e90f7b4d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'
     },
     {
         id: 3,
